@@ -1,23 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/b2"
+    android:visibility="visible"
     tools:context=".fragments.AboutFrag">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="290dp"
-        android:layout_height="72dp"
+        android:layout_width="wrap_content"
+        android:layout_height="518dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
         android:layout_marginTop="136dp"
-        android:layout_marginEnd="78dp"
-        android:layout_marginRight="78dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginRight="54dp"
         android:fontFamily="@font/montserrat"
-        android:text="This is a app built under assignment 3 of the Android Development CSD course under Sombuddha Chakravarty"
+        android:text="This is a app built under assignment 3 of the Android Development CSD course under Sombuddha Chakravarty.
+It has a navigation drawer,each of which has 5 clickable items which lead you to respective fragments. You are viewing one of them currently.
+  The Send item allows you to send an email. Contact item shows your contacts along with their phone numbers. Primary item has a bottom navigation menu. Lastly, the Help item assists you while using the app."
         android:textColor="@android:color/black"
+        android:textSize="20dp"
         android:typeface="normal" />
 
     <TextView
@@ -33,7 +44,7 @@
         android:fontFamily="@font/montserrat"
         android:text="About App"
         android:textColor="@color/colorAccent"
-        android:textSize="20dp"
+        android:textSize="25dp"
         android:typeface="normal" />
 
 </RelativeLayout>

@@ -30,20 +30,39 @@
         android:src="@drawable/ic_phone_black_24dp"/>
 </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView5"
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="201dp"
+        android:layout_height="400dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="235dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="157dp"
         android:layout_marginEnd="0dp"
         android:layout_marginRight="0dp"
+        android:src="@drawable/bits_pilani" />
 
-        android:background="@drawable/b3" />
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="209dp"
+        android:layout_height="99dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="98dp"
+        android:layout_marginLeft="98dp"
+        android:layout_marginTop="91dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginRight="103dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:text="Welcome to BITS App!"
+        android:textColor="@color/colorAccent"
+        android:textSize="30dp"
+        android:typeface="normal" />
 </RelativeLayout>

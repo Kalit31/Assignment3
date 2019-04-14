@@ -48,20 +48,23 @@ public class Send_Frag extends Fragment {
         email_id=v.findViewById(R.id.recieve_id);
         content=v.findViewById(R.id.email);
         // Getting context
-        Context context=getContext();
+        final Context context=getContext();
 
         send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v)
             {
-                String x = "mailto:" + Uri.encode(email_id.getText().toString())+
-                        "?subject="+Uri.encode("Subject")
-                        + "&body="+Uri.encode(content.getText().toString());
-                Uri send_data = Uri.parse(x);
-                Intent send =new Intent(Intent.ACTION_SENDTO);
-                send.setData(send_data);
-                startActivity(send);
-
+                    if(email_id.getText().toString().isEmpty())
+                        Toast.makeText(context,"Please enter an email ID",Toast.LENGTH_SHORT).show();
+                    else {
+                        String x = "mailto:" + Uri.encode(email_id.getText().toString()) +
+                                "?subject=" + Uri.encode("Subject")
+                                + "&body=" + Uri.encode(content.getText().toString());
+                        Uri send_data = Uri.parse(x);
+                        Intent send = new Intent(Intent.ACTION_SENDTO);
+                        send.setData(send_data);
+                        startActivity(send);
+                    }
             }
         });
 

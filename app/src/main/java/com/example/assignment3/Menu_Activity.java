@@ -38,6 +38,7 @@ public class Menu_Activity extends AppCompatActivity implements NavigationView.O
 
         drawerLayout=findViewById(R.id.drawer);
         ImageView hamburger=findViewById(R.id.hamburger);
+
         hamburger.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -51,6 +52,7 @@ public class Menu_Activity extends AppCompatActivity implements NavigationView.O
 
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem)
     {
+
         drawerLayout.closeDrawer(GravityCompat.START);
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         switch(menuItem.getItemId())

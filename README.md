@@ -7,8 +7,9 @@
 
 ## Glimpse of my app:
  ### Main Page
- 
+ ![Main Page](/Main_Page.jpg)
  ### Send Email Page
- 
+![Send Email Page](/email.jpg) 
  ### Contacts Page
+ ![Contacts Page](/contact.jpg)
  
